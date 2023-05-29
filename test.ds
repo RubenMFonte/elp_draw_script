@@ -11,14 +11,12 @@ dimension: N*SIDE + MARGIN*2 ~ N*SIDE + MARGIN*2
 background: GRAY
 }
 logic {
-color BLACK
-for l in [0,N[
-  for c in [0,N[
-    if (l + c) % 2 == 0
-      fill WHITE
-    else
-      fill BLACK
-    square c * SIDE + MARGIN,l * SIDE + MARGIN SIDE
-line 0|0|255
-rectangle MARGIN,MARGIN N*SIDE ~ N*SIDE
+
+fill 255|0|0
+rectangle MARGIN,MARGIN N*10 ~ N*10
+
+
+line 0|255|0
+rectangle MARGIN,MARGIN N*5 ~ N*5
+
 }
